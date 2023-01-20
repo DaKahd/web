@@ -15,3 +15,7 @@ h2{
 li{
     color:darkslateblue;
 }
+a{
+    color: rgb(100, 175, 255);
+    text-decoration:none;
+}

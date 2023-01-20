@@ -1,9 +1,17 @@
 body{
-    background-color: lightblue;
+    background-color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 p{
-    color: green;
+    color: darkslateblue;
 }
 h1{
-    color:rgb(165,42,42);
+    color:blue;
+    text-align:center;
+}
+h2{
+    color: blue;
+}
+li{
+    color:darkslateblue;
 }

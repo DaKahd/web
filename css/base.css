@@ -25,7 +25,7 @@
     width: min(20%, 200px);
     height: 100%;
     background-color: lightgray;
-    transition: left 0.3s;
+    transition: left 0.5s;
     z-index: 0;
   }
   #sidebarContent{
@@ -33,5 +33,24 @@
     padding:10%;
     padding-top: 7vh;
   }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
   
   

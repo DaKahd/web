@@ -2,77 +2,89 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="/css/light.css"> 
-    <title>Resume</title>
+    <style>
+      /* Add CSS styles for the sidebar and button here */
+      
+    </style>
+    <title>Home</title>
   </head>
   <body>
-   <h1>My resume</h1>
-   <h2>Languages</h2>
-   <ul>
-      <li>Computer languages<br>
+      <div id="button">
+        <img src="/images/bars.png" alt="Sidebar Toggle" onclick="toggleSidebar()">
+      </div>
+      <div id="mainpage">
+        <!--Here is where the code unique to each page will go-->
+        <h1>My resume</h1>
+        <h2>Languages</h2>
         <ul>
-          <li>java: proficient</li>
-          <li>python: proficient</li>
-          <li>c++: beginner</li>
-          <li>html/css: beginner :D</li>
+           <li>Computer languages<br>
+             <ul>
+               <li>java: proficient</li>
+               <li>python: proficient</li>
+               <li>c++: beginner</li>
+               <li>html/css/js: getting there...</li>
+             </ul>
+           </li>
+           <li>languages<br>
+             <ul>
+               <li>English: native-level</li>
+               <li>Spanish: Legally fluent after passing AP Spanish Language test</li>
+               <li>Armenian: Legally fluent after passing Bilingual Competency Exam</li>
+             </ul>
+           </li>
         </ul>
-      </li>
-      <li>languages<br>
+        <h2>Education</h2>
         <ul>
-          <li>English: native-level</li>
-          <li>Spanish: mostly fluent</li>
-          <li>Armenian: mostly (and conversationally) fluent</li>
+         <li>Monte Vista Elementary School: Graduated 2018</li>
+         <li>Rosemont Middle School: Graduated 2020</li>
+         <li>Crescenta Valley High School: Graduating June 2024<br>
+         <li>Certified in Quantum Computing via The Coding School</li>
         </ul>
-      </li>
-   </ul>
-   <h2>Education</h2>
-   <ul>
-    <li>Monte Vista Elementary School: Graduated 2018</li>
-    <li>Rosemont Middle School: Graduated 2020</li>
-    <li>Crescenta Valley High School: Graduating June 2024<br>
-    <ul>
-      <li>AP Physics 1/2</li>
-      <li>AP Computer Science</li>
-      <li>AP European and US History</li>
-      <li>AP Calculus</li>
-      <li>AP Art History</li>
-      <li>AP Spanish</li>
-      <li>AP English</li>
-      <li>AP Human Geography</li>
-      
-    </ul>
-    </li>
-    <li>Quantum Computing at The Coding School</li>
-   </ul>
-   <h2>Work Experience</h2>
-   <ul>
-    <li>Summer 2021: NextGen CRISPR intern</li>
-    <li>Summer 2022: Blockchain design intern</li>
-    <li>Summer 2022: Childcare supervisor at Fremont Elementary School</li>
-   </ul>
-   <h2>Extracurriculars</h2>
-   <ul>
-    <li>Co-captain of the Speech and Debate team</li>
-    <li>Publicist of local Youth Town Council</li>
-    <li>Secretary of local School site Council</li>
-    <li>Mock Trial Pretrial Attorney</li>
-    <li>Robotics</li>
-    <li>Scholastic bowl</li>
-   </ul>
-   <h2>Hobbies</h2>
-   <ul>
-    <li>Piano: ten years experience</li>
-    <li>Travel with family</li>
-    <li>Amateur chess player</li>
-   </ul>
-   <h2>Interests</h2>
-   <ul>
-    <li>Computer science</li>
-    <li>Engineering</li>
-    <li>AI</li>
-    <li>Ethical hacking</li>
-   </ul>
-   <br><br><br><br><br>
-   <a href="/index.html">back</a>
-   <br><br><br>
+        <h2>Work Experience</h2>
+        <ul>
+         <li>Summer 2021: Co-lead intern at NextGen CRISPR</li>
+         <li>Summer 2022: Blockchain Design intern at the Bayha Group</li>
+         <li>Summer 2022: Childcare Supervisor at Fremont Elementary School</li>
+        </ul>
+        <h2>Extracurriculars</h2>
+        <ul>
+         <li>Speech and Debate</li>
+          <ul>
+            <li>Two years as captain</li>
+            <li>Ranked in top 50 Parlimentary Debaters Nationwide</li>
+            <li>Received Coaches' Award in June 2023</li>
+            <li>National Speech and Debate member with National Forensic League Degree of Distinction</li>
+          </ul>
+         <li>Publicist of local Youth Town Council</li>
+         <li>Elected as Secretary of local School Site Council</li>
+         <li>Mock Trial Pretrial Attorney and MVP</li>
+         <li>Robotics, with an emphasis on design</li>
+         <li>Scholastic bowl: 2nd place district-wide</li>
+        </ul>
+        <h2>Hobbies</h2>
+        <ul>
+         <li>Piano: ten years experience</li>
+         <li>Travel with family</li>
+         <li>Amateur chess player</li>
+        </ul>
+        <h2>Interests</h2>
+        <ul>
+         <li>Computer science</li>
+         <li>Cybersecurity</li>
+         <li>AI</li>
+         <li>Ethical hacking</li>
+        </ul>
+      </div>
+    <div id="sidebar">
+      <div id = "sidebarContent">
+        <!-- Add the links for the sidebar here -->
+        <a href="/index.html">Home</a><br><br>
+        <a href="/html/resume.html">View my resume</a><br><br>
+        <a href="/stopwatch/Stopwatch.html">Java stopwatch class docs</a>
+        <script src="/js/scripts.js"></script>
+      </div>
+    </div>
+
+   
   </body>
- </html>
+</html>

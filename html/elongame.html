@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/light.css"> 
+    <title>Home</title>
+  </head>
+  <body>
+      <div id="button">
+        <img src="/images/bars.png" alt="Sidebar Toggle" onclick="toggleSidebar()">
+      </div>
+      <div id="mainpage">
+        <!--Here is where the code unique to each page will go-->
+        <h1>Elon Musk Game</h1>
+        <h2>Basics</h2>
+        <p>This game was coded as part of the AP Computer Science program at Crescenta Valley High School. The game uses Java and an AWT-based framework to animate graphics.</p><br>
+        <p>The game is relatively simple: the player controls Elon Musk with WASD keys, trying to avoid Twitter icons. Elon Musk is trying to negotiate a good price to buy Twitter, so the price decreases over time. The player wins when the price reaches zero, and Musk wins his court case, although negative prices are included to compare high scores.</p><br>
+        <h2>Technical</h2>
+        <p>The game incorporates the following technical aspects:</p>
+        <ul>
+            <li>The number of Twitter icons and their frequency both increase as time passes, using the Stopwatch class as a helper</li><br>
+            <li>Twitter icons "lock" onto Elon Musk when they initially spawn and keep their trajectory, so that the player must always keep moving</li><br>
+            <li>As more and more icons are spawned, the game lags (on purpose), so that the icons move more slowly</li><br>
+            <li>In order to prevent the lagging of Elon Musk due to increasing Twitters, multithreading is used</li>
+        </ul>
+        <h2>Game Download</h2>
+        <p>To download a ZIP folder of the game, please click the link below. A ZIP folder will appear on your computer; make sure you unzip and press "run" to play</p><br>
+        <a href="/elon/application.zip">Elon Musk Game Download</a>
+      </div>
+      <div id="sidebar">
+        <div id="sidebarContent">
+          <a href="/index.html">Home</a><br><br>
+          <a href="/html/resume.html">View my resume</a><br><br>
+          <div class="dropdown">
+            <a href="#" class="dropbtn">Stopwatch</a>
+            <div class="dropdown-content">
+              <a href="/html/stopwatch.html">Project Explanation</a>
+              <a href="/stopwatch/Stopwatch.html" target="_blank">Project Documentation</a>
+            </div>
+          </div><br>
+          <a href="/html/elongame.html">Elon Musk Game</a>
+          </div>
+      
+          <script src="/js/scripts.js"></script>
+        </div>
+      </div>
+      
+
+   
+  </body>
+</html>

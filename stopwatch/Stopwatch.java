@@ -131,9 +131,47 @@ public class Stopwatch{
 			}
 			catch(Exception ex){}
 		}
+		/**
+		 *converts the time in milliseconds to a human-readable string
+		 *@param milliseconds the number of milliseconds to convert
+		 *@return human-readable string
+		*/
+		public static String readable(long milliseconds){
+			if (milliseconds < 0) {
+				throw new IllegalArgumentException("Milliseconds cannot be negative.");
+			}
 
+			long seconds = milliseconds / 1000;
+			long minutes = seconds / 60;
+			long hours = minutes / 60;
+			long days = hours / 24;
 
-       /*
+			milliseconds %= 1000;
+			seconds %= 60;
+			minutes %= 60;
+			hours %= 24;
+
+			StringBuilder result = new StringBuilder();
+
+			if (days > 0) {
+				result.append(days).append(" days ");
+			}
+			if (hours > 0) {
+				result.append(hours).append(" hours ");
+			}
+			if (minutes > 0) {
+				result.append(minutes).append(" minutes ");
+			}
+			if (seconds > 0) {
+				result.append(seconds).append(" seconds ");
+			}
+			if (milliseconds > 0) {
+				result.append(milliseconds).append(" milliseconds");
+			}
+
+			return result.toString().trim();
+		}
+      /*
 		public static void main(String[] args){
             Stopwatch s = new Stopwatch();
             
@@ -165,12 +203,13 @@ public class Stopwatch{
 			withLaps.start();
 			withLaps.wait(50);
 			withLaps.lap();
-			withLaps.wait(100);
+			withLaps.wait(1000);
 			withLaps.lap();
 			withLaps.stop();
 			for(int i = 0; i<3; i++){
-				System.out.println("lap " +i+": "+withLaps.read(i));
+				System.out.println("lap " +i+": "+readable(withLaps.read(i)));
 			}
+			System.out.println(readable(99999999l));
         }
-        */
+      */
 	}
